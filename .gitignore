@@ -1,0 +1,9 @@
+.tox
+.pytest_cache
+.coverage
+coverage.*
+htmlcov
+.idea
+venv
+__pycache__
+dist
