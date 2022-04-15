@@ -60,12 +60,12 @@ urlpatterns += [
 
 ### Normal URI response
 The URI returns a random integer [0-100] every time it is called (54 in this case).
-![Normal URI response](https://raw.githubusercontent.com/drf-mockup-response/drf-mockup-response-static/main/case_1_normal_response.png)
+![Normal URI response](https://raw.githubusercontent.com/drf-mock-response/drf-mockup-response-static/main/case_1_normal_response.png)
 
 ### Custom mock response
 Let's assume that there is a need to make the URI to return a specific number, for example 88. The first step is to 
 create a MockResponse object via the Admin panel:
-![Custom mock response](https://raw.githubusercontent.com/drf-mockup-response/drf-mockup-response-static/main/mock_88_create.png)
+![Custom mock response](https://raw.githubusercontent.com/drf-mock-response/drf-mockup-response-static/main/mock_88_create.png)
 
 The Content, Status, and Content-Type of the request can be mocked. The Content-Types that are currently supported are:
 
@@ -74,14 +74,14 @@ The Content, Status, and Content-Type of the request can be mocked. The Content-
 
 The name of the MockResponse in this example is "mock-return-88". This name can then be specified as a
 *Mock-Response-ID* request header:
-![Custom mock response](https://raw.githubusercontent.com/drf-mockup-response/drf-mockup-response-static/main/case_2_custom_mock.png)
+![Custom mock response](https://raw.githubusercontent.com/drf-mock-response/drf-mockup-response-static/main/case_2_custom_mock.png)
 
 The URI returned the mocked value 88.
 
 ### Default HTTP Status mock response
 For convenience any standard HTTP Status can be used as a *Mock-Response-ID*. However, it is not possible to specify a 
 response Content, therefore this feature is useful when only the response Status is important.
-![Response with delay](https://raw.githubusercontent.com/drf-mockup-response/drf-mockup-response-static/main/case_4_default_http_status.png)
+![Response with delay](https://raw.githubusercontent.com/drf-mock-response/drf-mockup-response-static/main/case_4_default_http_status.png)
 
 The HTTP Status Codes that are supported are:
 - 100: CONTINUE
@@ -149,7 +149,7 @@ The HTTP Status Codes that are supported are:
 A delay (in seconds) may be specified for normal or mock responses by specifying the *Mock-Response-Delay* header. Keep 
 in mind that a specified delay is on addition to any processing / IO times, so delays should be specified on an 
 "at-least-that-much" basis.
-![Response with delay](https://raw.githubusercontent.com/drf-mockup-response/drf-mockup-response-static/main/case_3_custom_mock_and_delay.png)
+![Response with delay](https://raw.githubusercontent.com/drf-mock-response/drf-mockup-response-static/main/case_3_custom_mock_and_delay.png)
 
 ## Development
 TODO
