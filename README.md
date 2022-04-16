@@ -147,8 +147,7 @@ The HTTP Status Codes that are supported are:
 
 ### Response delay
 A delay (in seconds) may be specified for normal or mock responses by specifying the *Mock-Response-Delay* header. Keep 
-in mind that a specified delay is on addition to any processing / IO times, so delays should be specified on an 
-"at-least-that-much" basis.
+in mind that a specified delay is added to any processing / IO times, so resulting delays will always be bigger than the specified value.
 ![Response with delay](https://raw.githubusercontent.com/drf-mock-response/drf-mockup-response-static/main/case_3_custom_mock_and_delay.png)
 
 ## Development
