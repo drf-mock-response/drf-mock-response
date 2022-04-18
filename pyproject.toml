@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "drfmockresponse"
-version = "0.1.0"
+version = "0.1.1"
 description = "Library to mock responses in Django Rest Framework."
 authors = ["Kostas Konstantopoulos <ntopoulos@yahoo.com>"]
 
