@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "drfmockresponse"
 version = "0.1.1"
-description = "Library to mock responses in Django Rest Framework."
+description = "Middleware that can mock responses in Django Rest Framework."
 authors = ["Kostas Konstantopoulos <ntopoulos@yahoo.com>"]
 
 [tool.poetry.dependencies]
